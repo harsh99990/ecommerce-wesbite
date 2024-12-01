@@ -24,7 +24,7 @@
     @apply flex items-center gap-6 flex-wrap mt-3;
 }
 .footer-section.buttons a {
-    @apply mb-3 inline-flex last:mb-0;
+    @apply mb-3 inline-flex mr-2 xs:mr-3 sm:mr-0 last:mb-0;
 }
 .footer-section .social-links a {
     @apply text-white text-lg hover:text-primary;
