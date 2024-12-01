@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "@/assets/images/logo.svg";
 import { FaShoppingCart, FaSearch, FaUserCircle } from "react-icons/fa";
 import { IoIosArrowDown, IoMdClose, IoMdNotifications } from "react-icons/io";
@@ -12,7 +12,10 @@ const Header = () => {
   const pathname = usePathname();
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
-
+  useEffect(() => {
+    setIsMobile(false);
+    document.body.classList.remove("overflow");
+  }, [pathname]);
   const handleClick = () => {
     setIsMobile(!isMobile);
     document.body.classList.toggle("overflow");
@@ -110,7 +113,9 @@ const Header = () => {
             <div className="nav_icon_flex">
               <Link
                 href={"#"}
-                className={`${pathname === "/search" ? "checked" : ""} icon_box`}
+                className={`${
+                  pathname === "/search" ? "checked" : ""
+                } icon_box`}
               >
                 <FaSearch className="icon_bx_icon" />
               </Link>
