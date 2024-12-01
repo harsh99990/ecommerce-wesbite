@@ -60,6 +60,14 @@
   @apply bg-[#F1F5F9] relative flex items-center justify-center hover:bg-[#dae0e6] w-[2.375rem] h-[2.375rem] p-2 rounded-[0.25rem] cursor-pointer hover:shadow-sm;
 }
 
+.icon_box.checked {
+  @apply bg-primary;
+}
+
+.icon_box.checked .icon_bx_icon {
+  @apply text-white
+}
+
 .icon_bx_icon {
   @apply text-base text-[#64748B];
 }

@@ -1,0 +1,90 @@
+.cart-table {
+    @apply w-full border-collapse mb-7;
+}
+
+.cart-table th,
+.cart-table td {
+    @apply text-light whitespace-nowrap p-3 text-left;
+}
+
+.img_flex_detl {
+    @apply flex items-center gap-3;
+}
+.table_overflow{
+    @apply overflow-y-auto;
+}
+.cart-table th {
+    @apply bg-[#F0FDFA] text-dark font-semibold text-lg;
+}
+
+.cart-table td img {
+    @apply sm:w-[6.25rem] w-16 h-16 sm:h-[6.25rem] rounded-[0.625rem];
+}
+
+.img_title {
+    @apply text-dark underline font-medium text-base sm:text-lg;
+}
+
+.img_span {
+    @apply text-light text-sm;
+}
+
+.cart-table .product-details {
+    @apply flex items-center;
+}
+
+.cart-table td button.delete_btn {
+    @apply bg-transparent border-none text-primary hover:bg-transparent hover:text-red-600;
+}
+
+.inc_flex {
+    @apply flex items-center;
+}
+
+.btn_increment {
+    @apply bg-[#E2E8F0] h-9 last:rounded-tr-xl last:rounded-br-xl first:rounded-tl-xl first:rounded-bl-xl inline-flex items-center justify-center cursor-pointer py-1 px-2.5;
+}
+
+.bg_cp {
+    @apply bg-[#F8FAFC];
+}
+
+.coupon-section {
+    @apply col-span-2;
+}
+
+.coupon-section h3 {
+    @apply text-lg font-semibold pb-2;
+}
+
+.btn_cp_dfl {
+    @apply flex sm:mb-10 mb-6 items-stretch;
+}
+
+.btn_cp_dfl .btn {
+    @apply rounded-tl-none rounded-bl-none rounded-tr-xl rounded-br-xl;
+}
+
+.coupon-section input {
+    @apply p-2.5 w-[9rem] xs:w-[13rem] sm:w-[18.75rem] border border-solid border-[#BEBCBD] outline-none focus:outline-none focus:border-primary focus:shadow-sm rounded-tl-xl rounded-bl-xl;
+}
+
+.cart-summary {
+    @apply border-l pb-8 border-r border-solid border-[#eaeaea] h-full;
+}
+
+.crt_p div {
+    @apply flex items-center gap-4 justify-between mb-4 last:mb-0;
+}
+
+.crt_p {
+    @apply p-8 border-b border-solid border-[#eaeaea];
+}
+
+.cart-summary .btn {
+    @apply mt-8 mx-auto flex;
+}
+
+.cp_flex {
+    @apply grid py-4 sm:py-0 grid-cols-1 sm:grid-cols-3 items-center gap-y-4 sm:gap-5;
+}
