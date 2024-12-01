@@ -1,4 +1,7 @@
 import { Inter } from "next/font/google";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import "../styles/style.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";

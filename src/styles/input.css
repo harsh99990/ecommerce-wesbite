@@ -3,4 +3,9 @@
 /* component css start */
 @import './components/header';
 @import './components/footer';
+@import './components/faq';
 /* component css end */
+
+/* pages css */
+@import './pages/home';
+/* pages css */

@@ -1,0 +1,22 @@
+.faq_section {
+  @apply bg-backgroundLight;
+}
+.faq_item {
+  @apply border-b border-solid border-[#94A3B8] py-3.5 px-1.5 bg-white last:mb-0 mb-3 sm:mb-5 cursor-pointer transition-all;
+}
+
+.faq_question {
+  @apply flex justify-between gap-4 items-center text-lg sm:text-xl font-medium;
+}
+
+.faq_toggle svg {
+  @apply text-primary text-base;
+}
+
+.faq_answer {   
+  @apply mt-2.5 text-light;
+}
+
+.faq_item.active .faq_question {
+  @apply text-primary;
+}

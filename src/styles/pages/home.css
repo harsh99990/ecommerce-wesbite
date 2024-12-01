@@ -1,0 +1,239 @@
+/* review section css */
+.review_card {
+  @apply bg-white border shadow-sm p-5 rounded-lg border-solid border-[#E2E8F0];
+}
+
+.detail_flex {
+  @apply flex items-start mb-5 justify-between gap-4 flex-wrap;
+}
+
+.review_image img {
+  @apply w-[3.75rem] h-[3.75rem] rounded;
+}
+
+.review_name {
+  @apply text-lg font-semibold sm:text-xl mx-0 my-2.5;
+}
+
+.review_rating {
+  @apply flex justify-center gap-[5px] mx-0 my-[5px];
+}
+
+.star {
+  @apply text-[1.2rem] text-[#ddd];
+}
+
+.star.filled {
+  @apply text-[#f5a623];
+}
+
+.star.half {
+  @apply text-[#f5a623];
+}
+
+.review_text {
+  @apply text-[0.9rem] text-[#666] leading-[1.4] mt-2.5;
+}
+
+.orflow_hidden {
+  @apply overflow-hidden pb-10;
+}
+
+.orflow_hidden .swiper {
+  @apply overflow-visible;
+}
+
+.swiper-pagination-bullet {
+  @apply bg-primary;
+}
+
+.orflow_hidden .swiper .swiper-pagination {
+  @apply -bottom-7;
+}
+
+/* review section css */
+
+
+/* brand css start */
+.b_img {
+  @apply flex h-[150px] items-center justify-center;
+}
+
+/* brand css end */
+.banner_section {
+  @apply bg-[#F0FDFA];
+}
+
+.e_offer_flex {
+  @apply flex items-center justify-between gap-6 flex-wrap;
+}
+
+.e_off_item {
+  @apply flex items-center gap-4;
+}
+
+.e_off_ic {
+  @apply text-4xl opacity-65;
+}
+
+.e_head {
+  @apply text-lg sm:text-xl font-bold;
+}
+
+.e_desc {
+  @apply text-light;
+}
+
+.hc_grid {
+  @apply grid xs:grid-cols-2 grid-cols-1 md:grid-cols-3 items-stretch gap-5;
+}
+
+.hc_item {
+  @apply text-center py-4 sm:py-6 px-3 bg-[#F1F5F9] rounded-lg;
+}
+
+.hc_title {
+  @apply text-2xl sm:text-3xl md:text-4xl font-bold;
+}
+
+.hc_desc {
+  @apply text-base xs:text-xl mt-2;
+}
+
+.cat_grid {
+  @apply grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-5 md:grid-cols-8 gap-5 sm:gap-9 items-stretch;
+}
+
+.cat_list {
+  @apply flex items-center justify-center flex-col gap-2.5 sm:gap-5;
+}
+
+.cat_list:hover img {
+  @apply shadow-md rounded-full border border-solid border-primary;
+}
+
+.cat_title {
+  @apply font-bold;
+}
+
+.feature_section {
+  @apply bg-[#F8FAFC];
+}
+
+.product_grid {
+  @apply grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 xs:grid-cols-2 gap-3 sm:gap-5 items-stretch;
+}
+
+.product-card {
+  @apply rounded-lg hover:border-primary overflow-hidden shadow-sm h-full bg-white border border-solid border-[#e2e8f0];
+}
+
+.image-container {
+  @apply relative w-full h-[12rem] sm:h-[15rem] overflow-hidden;
+}
+
+.product-image {
+  @apply w-full h-full object-cover;
+}
+
+.wishlist-icon {
+  @apply absolute bg-white cursor-pointer text-[#aaa] text-base flex items-center justify-center w-[2.375rem] h-[2.375rem] rounded-[50%] border border-solid border-[#94A3B8] right-2.5 top-2.5 hover:scale-110;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.wishlist-icon.active {
+  @apply text-[#ff6161] animate-[pulse_0.4s_ease];
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.product-info {
+  @apply p-3 sm:p-5;
+}
+
+.rating {
+  @apply absolute bottom-2.5 left-2.5 flex items-center gap-1 text-sm font-medium bg-white shadow rounded p-1.5;
+}
+
+.star-icon {
+  color: #fabb05;
+}
+
+.product-title {
+  @apply font-bold line-clamp-1 inline-flex hover:underline text-lg;
+}
+
+.product-description {
+  @apply mt-1.5 line-clamp-2 text-light text-sm mb-2 xs:mb-4;
+}
+
+.price-section {
+  @apply flex items-center gap-3 mb-2.5 xs:mb-4 flex-wrap;
+}
+
+.current-price {
+  @apply font-semibold text-[#3cb371];
+}
+
+.original-price {
+  @apply text-sm line-through text-light;
+}
+
+.discount {
+  @apply text-sm text-[#EF4444];
+}
+
+.product-info .btn-primary {
+  @apply justify-center w-full py-2 sm:py-2.5;
+}
+
+
+.banner-container {
+  @apply w-full relative bg-[#f8fafc] overflow-hidden;
+}
+
+.banner-slide {
+  @apply grid grid-cols-1 md:grid-cols-2 items-center gap-3 sm:gap-6;
+}
+
+.content {
+  @apply md:py-[6.25rem] py-4 px-4 xs:px-8 xs:py-8 md:order-none order-1 md:pr-[50px] md:pl-[80px];
+}
+
+.content p {
+  @apply text-light xs:py-6 py-5 sm:py-10;
+}
+
+.bn_slide {
+  @apply inline-flex items-center flex-wrap gap-3 xs:gap-6;
+}
+
+.image {
+  @apply h-full flex items-center justify-center;
+}
+
+.image img {
+  @apply w-full h-[15rem] sm:h-[25rem] md:h-[43rem] object-cover;
+}
+
+.navigation_btn_flex {
+  @apply mx-4 mb-4 sm:absolute right-10 bottom-10 inline-flex items-center gap-2 z-[1];
+}
+
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+  @apply w-[2.375rem] h-[2.375rem] rounded-full flex items-center justify-center shadow cursor-pointer bg-[#CBD5E1] hover:bg-primary hover:text-white;
+}
