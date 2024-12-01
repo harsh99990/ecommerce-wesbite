@@ -1,0 +1,6 @@
+@import "./globals";
+
+/* component css start */
+@import './components/header';
+@import './components/footer';
+/* component css end */
